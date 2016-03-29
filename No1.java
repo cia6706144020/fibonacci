@@ -31,7 +31,7 @@ public class No1 {
         for (int i = 0; i < Deret; i++) {
             System.out.print(bil[i]+" ");
             bil[i+2] = bil[i] + bil[i + 1];
-            
+            //lupa kak
         }
         
     }
