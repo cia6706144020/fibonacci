@@ -22,6 +22,7 @@ public class No1 {
         bil[0] = 0;
         bil[1] = 1;
         int Deret;
+        int jumlah = 0;
         
         Scanner input = new Scanner(System.in);
         System.out.println("Masukkan jumlah deret : ");
@@ -29,11 +30,12 @@ public class No1 {
         
         Deret = Integer.parseInt(data);
         for (int i = 0; i < Deret; i++) {
-            System.out.print(bil[i]+" ");
             bil[i+2] = bil[i] + bil[i + 1];
-            
+            jumlah += bil[i];
+        }
+         System.out.println(jumlah);   
         }
         
     }
     
-}
+
